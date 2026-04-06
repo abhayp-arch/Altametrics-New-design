@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive AI Insights | Altametrics Reporting Suite</title>
+    <meta name="description" content="Discover how Altametrics Predictive AI Insights can transform your restaurant operations, reduce costs, and streamline your Reporting Suite.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .feature-hero { padding: clamp(120px, 15vh, 180px) 5% 100px; text-align: center; background: radial-gradient(circle at top, rgba(99, 102, 241, 0.05), transparent 60%); }
+        .feature-hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; letter-spacing: -0.04em; margin-bottom: 25px; color:#0f172a; max-width:1100px; margin-left:auto; margin-right:auto; line-height: 1.1; }
+        .feature-hero .text-gradient { background: linear-gradient(135deg, #6366f1, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .feature-badges { margin-bottom: 30px; }
+        .feature-badge { display: inline-block; padding: 8px 16px; background: rgba(99,102,241,0.1); color: #6366f1; border-radius: 100px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        .feature-desc { font-size: 1.25rem; color: #64748b; max-width: 900px; margin: 0 auto 40px; line-height: 1.6; }
+        .hero-img { width: 100%; max-width: 1200px; margin: 40px auto 0; border-radius: 20px; box-shadow: 0 40px 80px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05); object-fit: cover; height: auto; max-height: 600px; display: block; }
+        
+        .benefits-section { padding: clamp(60px, 10vh, 120px) 5%; background: white; }
+        .section-header { text-align:center; max-width:1000px; margin:0 auto 60px; }
+        .section-header h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight:800; color:#0f172a; letter-spacing:-0.03em; margin-bottom:15px; }
+        .section-header p { font-size: 1.15rem; color:#64748b; line-height:1.6; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; max-width: 1440px; margin: 0 auto; text-align: center; }
+        .benefit-card { padding: 40px; background: #f8fafc; border-radius: 24px; transition: transform 0.3s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.02);border: 1px solid rgba(0,0,0,0.04); }
+        .benefit-card:hover { transform: translateY(-10px); border-color: rgba(99,102,241,0.2); box-shadow: 0 10px 30px rgba(99,102,241,0.1); }
+        .benefit-icon { font-size: 3rem; margin-bottom: 20px; }
+        .benefit-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #0f172a; }
+        .benefit-card p { color: #64748b; font-size: 1.05rem; line-height:1.5; }
+
+        .use-cases { padding: clamp(60px, 10vh, 120px) 5%; background: #f1f5f9; }
+        .use-case-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap:40px; max-width:1440px; margin:0 auto; }
+        .use-case-card { background:white; padding:40px; border-radius:24px; box-shadow:0 15px 35px rgba(0,0,0,0.05); border:1px solid rgba(0,0,0,0.02); }
+        .use-case-card .challenge { color:#ef4444; font-weight:700; margin-bottom:10px; font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; }
+        .use-case-card .solution { color:#10b981; font-weight:700; margin-top:30px; margin-bottom:10px; font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; }
+        .use-case-card h4 { font-size:1.4rem; color:#0f172a; margin-bottom:10px; }
+        .use-case-card p { color:#475569; font-size:1.1rem; line-height:1.6; margin-bottom:0; }
+
+        .deep-dive { padding: clamp(60px, 10vh, 120px) 5%; background: white; }
+        .z-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 80px; align-items: center; max-width: 1440px; margin: 0 auto 100px; }
+        .z-row:last-child { margin-bottom: 0; }
+        .z-row:nth-child(even) .z-content { order: 2; }
+        .z-row:nth-child(even) .z-image { order: 1; }
+        .z-content h2 { font-size: 2.5rem; font-weight: 800; color: #0f172a; margin-bottom: 20px; letter-spacing: -0.02em; line-height:1.1; }
+        .z-content p { font-size: 1.15rem; color: #475569; margin-bottom: 30px; line-height: 1.6; }
+        .z-list { list-style: none; padding: 0; margin-bottom:30px; }
+        .z-list li { font-size: 1.05rem; color: #334155; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-weight:500; }
+        .z-list li:before { content: '✓'; color: white; border-radius:50%; background:#10b981; padding:2px 6px; font-size:0.8rem; font-weight: bold; }
+        .z-image img { width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); height: 400px; object-fit: cover; border:1px solid rgba(0,0,0,0.05); }
+
+        .roles-section { padding: 100px 5%; background: #0f172a; color:white; }
+        .roles-section .section-header h2 { color:white; }
+        .roles-section .section-header p { color:#94a3b8; }
+        .roles-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:30px; max-width:1000px; margin:0 auto; }
+        .role-box { background:#1e293b; padding:40px; border-radius:24px; border:1px solid rgba(255,255,255,0.05); }
+        .role-box h3 { color:#8b5cf6; font-size:1.5rem; margin-bottom:15px; display:flex; align-items:center; gap:10px; }
+        .role-box p { color:#cbd5e1; font-size:1.1rem; line-height:1.6; }
+
+        .feature-cta { padding: 100px 5%; text-align: center; background: white; }
+        .cta-box { max-width: 900px; margin: 0 auto; padding: 60px; background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 32px; color: white; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+        .cta-box h2 { color: white; font-size: 3rem; font-weight: 800; margin-bottom: 20px; letter-spacing: -0.03em; }
+        .cta-box p { font-size: 1.25rem; color: #cbd5e1; margin-bottom: 40px; }
+        .btn-white { display: inline-block; padding: 15px 40px; background: white; color: #0f172a; font-weight: 700; border-radius: 12px; text-decoration: none; font-size: 1.1rem; transition: transform 0.2s; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .btn-white:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(0,0,0,0.15); }
+
+        .faq-section { padding: 100px 5%; background: #f8fafc; border-top: 1px solid #f1f5f9; }
+        .faq-heading { text-align: center; margin-bottom: 60px; }
+        .faq-heading h2 { font-size:2.5rem; font-weight:800; margin-bottom:15px; letter-spacing:-0.03em; color:#0f172a; }
+        .accordion { max-width: 800px; margin: 0 auto; }
+
+        .testimonial-banner { background: var(--primary-gradient, linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)); padding: 80px 5%; color: white; text-align: center; }
+        .test-quote { font-size: 2rem; font-weight: 500; font-style: italic; max-width: 900px; margin: 0 auto 30px; line-height: 1.4; }
+        .test-author { font-size: 1.2rem; font-weight: 700; }
+        .test-brand { font-size: 1rem; color: rgba(255,255,255,0.8); text-transform:uppercase; letter-spacing:0.1em; margin-top:5px; }
+
+        @media (max-width: 768px) {
+            .z-row, .use-case-grid, .roles-grid { grid-template-columns: 1fr; gap: 40px; }
+            .z-row:nth-child(even) .z-content, .z-row:nth-child(even) .z-image { order: unset; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .feature-hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar reveal">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <img src="https://logo.clearbit.com/altametrics.com" alt="Altametrics Icon"
+                    onerror="this.onerror=null; this.src='https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://altametrics.com&size=128'"
+                    style="height: 32px; width: auto; object-fit: contain; border-radius: 6px;">
+                <span class="altametrics-logo-text">Altametrics</span>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item has-dropdown">
+                    <a href="javascript:void(0)">Solutions</a>
+                    <div class="dropdown-menu">
+                        <!-- Sidebar -->
+                        <div class="dropdown-sidebar">
+                            <a href="workforce-scheduling.html" class="active" data-target="workforce">
+                                <span class="icon">👥</span> Workforce
+                            </a>
+                            <a href="inventory.html" data-target="inventory">
+                                <span class="icon">📦</span> Inventory
+                            </a>
+                            <a href="checklist.html" data-target="checklist">
+                                <span class="icon">📋</span> Checklist
+                            </a>
+                            <a href="reporting.html" data-target="reporting">
+                                <span class="icon">📊</span> Reporting
+                            </a>
+                            <a href="accounting.html" data-target="accounting">
+                                <span class="icon">💰</span> Accounting
+                            </a>
+                        </div>
+
+                        <!-- Content Panel -->
+                        <div class="dropdown-content-panel">
+                            
+                            <!-- Panel: Workforce -->
+                            <div class="dropdown-sub-panel active" id="panel-workforce">
+                                <div class="panel-header">
+                                    <h4>Workforce Suite</h4>
+                                    <p>AI-driven scheduling and labor compliance.</p>
+                                </div>
+                                <div class="sub-feature-grid">
+                                    <a href="ai-forecasting.html" class="sub-feature-item">
+                                        <span class="sub-item-title">AI Forecasting</span>
+                                        <span class="sub-item-desc">Predict demand with ML.</span>
+                                    </a>
+                                    <a href="compliance.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Compliance</span>
+                                        <span class="sub-item-desc">Stay ahead of labor laws.</span>
+                                    </a>
+                                    <a href="mobile-app.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Mobile App</span>
+                                        <span class="sub-item-desc">Staff shift pooling.</span>
+                                    </a>
+                                    <a href="payroll.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Payroll & Tips</span>
+                                        <span class="sub-item-desc">Automated distributions.</span>
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="workforce-scheduling.html" class="explore-link">Explore Workforce Suite →</a>
+                                </div>
+                            </div>
+
+                            <!-- Panel: Inventory -->
+                            <div class="dropdown-sub-panel" id="panel-inventory">
+                                <div class="panel-header">
+                                    <h4>Inventory Suite</h4>
+                                    <p>Real-time supply chain and cost control.</p>
+                                </div>
+                                <div class="sub-feature-grid">
+                                    <a href="waste-reduction.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Waste Reduction</span>
+                                        <span class="sub-item-desc">Protect your margins.</span>
+                                    </a>
+                                    <a href="purchasing.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Purchasing</span>
+                                        <span class="sub-item-desc">Smart vendor ordering.</span>
+                                    </a>
+                                    <a href="recipe-costing.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Recipe Costing</span>
+                                        <span class="sub-item-desc">Automated P-Mix sync.</span>
+                                    </a>
+                                    <a href="prep-planning.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Prep Planning</span>
+                                        <span class="sub-item-desc">Guide the back-of-house.</span>
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="inventory.html" class="explore-link">Explore Inventory Suite →</a>
+                                </div>
+                            </div>
+
+                            <!-- Panel: Checklist -->
+                            <div class="dropdown-sub-panel" id="panel-checklist">
+                                <div class="panel-header">
+                                    <h4>Operations Suite</h4>
+                                    <p>Digital compliance and food safety.</p>
+                                </div>
+                                <div class="sub-feature-grid">
+                                    <a href="digital-haccp.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Digital HACCP</span>
+                                        <span class="sub-item-desc">Bluetooth sensor sync.</span>
+                                    </a>
+                                    <a href="field-audits.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Field Audits</span>
+                                        <span class="sub-item-desc">Standardize your brand.</span>
+                                    </a>
+                                    <a href="food-safety.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Food Safety</span>
+                                        <span class="sub-item-desc">Health inspection ready.</span>
+                                    </a>
+                                    <a href="task-mgmt.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Task Mgmt</span>
+                                        <span class="sub-item-desc">Digital shift checklists.</span>
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="checklist.html" class="explore-link">Explore Operations Suite →</a>
+                                </div>
+                            </div>
+
+                            <!-- Panel: Reporting -->
+                            <div class="dropdown-sub-panel" id="panel-reporting">
+                                <div class="panel-header">
+                                    <h4>Reporting Suite</h4>
+                                    <p>Live business intelligence dashboards.</p>
+                                </div>
+                                <div class="sub-feature-grid">
+                                    <a href="real-time-sales.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Real-Time Sales</span>
+                                        <span class="sub-item-desc">Live from your POS.</span>
+                                    </a>
+                                    <a href="bi-analytics.html" class="sub-feature-item">
+                                        <span class="sub-item-title">BI Analytics</span>
+                                        <span class="sub-item-desc">Multi-unit performance.</span>
+                                    </a>
+                                    <a href="loss-prevention.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Loss Prevention</span>
+                                        <span class="sub-item-desc">Detect theft & error.</span>
+                                    </a>
+                                    <a href="ai-insights.html" class="sub-feature-item">
+                                        <span class="sub-item-title">AI Insights</span>
+                                        <span class="sub-item-desc">Actionable insights.</span>
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="reporting.html" class="explore-link">Explore Reporting Suite →</a>
+                                </div>
+                            </div>
+
+                            <!-- Panel: Accounting -->
+                            <div class="dropdown-sub-panel" id="panel-accounting">
+                                <div class="panel-header">
+                                    <h4>Accounting Suite</h4>
+                                    <p>Back-office financial automation.</p>
+                                </div>
+                                <div class="sub-feature-grid">
+                                    <a href="invoice-automation.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Invoice Automation</span>
+                                        <span class="sub-item-desc">Zero manual data entry.</span>
+                                    </a>
+                                    <a href="general-ledger.html" class="sub-feature-item">
+                                        <span class="sub-item-title">General Ledger</span>
+                                        <span class="sub-item-desc">Unified financial view.</span>
+                                    </a>
+                                    <a href="bank-recon.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Bank Recon</span>
+                                        <span class="sub-item-desc">Spot variances instantly.</span>
+                                    </a>
+                                    <a href="inventory-sync.html" class="sub-feature-item">
+                                        <span class="sub-item-title">Inventory Sync</span>
+                                        <span class="sub-item-desc">Vendor price tracking.</span>
+                                    </a>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="accounting.html" class="explore-link">Explore Accounting Suite →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="integrations.html">Integrations</a></li>
+                <li class="nav-item"><a href="resources.html">Resources</a></li>
+                <li class="nav-item"><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="javascript:void(0)" class="btn-secondary">Log In</a>
+                <a href="javascript:void(0)" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="feature-hero reveal">
+        <div class="feature-badges">
+            <span class="feature-badge">Reporting Suite</span>
+        </div>
+        <h1>Stop the Autopsy, <br><span class="text-gradient">Start the Prediction</span></h1>
+        <p class="feature-desc">Move from answering 'What happened?' to 'What is *going* to happen?' Altametrics uses vast machine learning capabilities to simulate operational outcomes and suggest prescriptive actions.</p>
+        <a href="https://altametrics.com/schedule-demo.html" class="btn-primary" style="font-size:1.1rem; padding:15px 35px;">Request a Demo</a>
+        <div style="margin-top: 60px;">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Predictive AI Insights Dashboard" class="hero-img">
+        </div>
+    </header>
+
+    <section class="trusted-by" style="padding: 60px 0; background: #fff; border-bottom: 1px solid rgba(0,0,0,0.05);">
+        <p style="text-align: center; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; font-weight: 600; margin-bottom: 30px;">Trusted by 100,000+ restaurant professionals across the globe</p>
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="mock-logo"><img src="assets/Buffalo-180-31da30fa2.webp" alt="Buffalo Wild Wings" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Chipotle-180-d39d5b0f0.webp" alt="Chipotle" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Jamba-bg-180-34687ebfe.webp" alt="Jamba" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Noodles-180-fa0c39df2.webp" alt="Noodles & Company" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Peets-180-c3ab70114.webp" alt="Peet's Coffee" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Pizza-bg-180-5dc7b1bfa.webp" alt="Pizza Hut" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Taco-Bell-bg-180-8e2d707da.webp" alt="Taco Bell" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Tokyo-bg-180-c5e968a47.webp" alt="Tokyo Joe's" class="brand-logo-img"></div>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <div class="mock-logo"><img src="assets/Buffalo-180-31da30fa2.webp" alt="Buffalo Wild Wings" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Chipotle-180-d39d5b0f0.webp" alt="Chipotle" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Jamba-bg-180-34687ebfe.webp" alt="Jamba" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Noodles-180-fa0c39df2.webp" alt="Noodles & Company" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Peets-180-c3ab70114.webp" alt="Peet's Coffee" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Pizza-bg-180-5dc7b1bfa.webp" alt="Pizza Hut" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Taco-Bell-bg-180-8e2d707da.webp" alt="Taco Bell" class="brand-logo-img"></div>
+                <div class="mock-logo"><img src="assets/Tokyo-bg-180-c5e968a47.webp" alt="Tokyo Joe's" class="brand-logo-img"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section reveal">
+        <div class="section-header">
+            <h2>Why Restaurants Choose Altametrics Predictive AI Insights</h2>
+            <p>We designed our Predictive AI Insights module specifically for multi-unit enterprise chains looking to escape the limitations of legacy spreadsheets and point solutions.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🧠</div>
+                <h3>Prescriptive Prompts</h3>
+                <p>Instead of a chart showing high labor, the AI prompts: 'Cut 2 servers in Store #14 immediately.'</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🔮</div>
+                <h3>Revenue Modeling</h3>
+                <p>Simulate what happens to overall Gross Profit if you raise the cost of your flagship burger by $0.50.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💬</div>
+                <h3>Natural Language Query</h3>
+                <p>Ask the system questions in plain English: 'Which store sold the most coffee yesterday?'</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-cases reveal">
+        <div class="section-header">
+            <h2>Common Scenarios, Solved</h2>
+            <p>See exactly how our Predictive AI Insights shifts your workflow from reactive firefighting to proactive management.</p>
+        </div>
+        <div class="use-case-grid">
+            <div class="use-case-card">
+                <div class="challenge">The Challenge</div>
+                <h4>A CFO spends hours modeling different commodity inflation scenarios in Excel.</h4>
+                <div class="solution">The Altametrics Solution</div>
+                <p>The AI instantly simulates a 10% hike in poultry costs across the entire menu matrix, advising on optimized menu price offsets.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="challenge">The Challenge</div>
+                <h4>A GM logs in and is overwhelmed by 30 different complex dashboards.</h4>
+                <div class="solution">The Altametrics Solution</div>
+                <p>The 'Smart Morning Brief' synthesizes all dashboards into three bullet points: "Prep extra fries, watch overtime for John, check your chicken freezer."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="deep-dive reveal">
+        <div class="z-row">
+            <div class="z-content">
+                <h2>Turnover Prediction Engine</h2>
+                <p>The cost of replacing a trained cook is massive. Our AI analyzes subtle indicators—missed clock-ins, reduced requested hours, stagnant wage growth—and flags employees at high risk of quitting, giving managers a chance to intervene.</p>
+                <ul class="z-list">
+                    <li>Flight-risk employee flagging</li>
+                    <li>Burnout detection based on scheduled OT</li>
+                    <li>Actionable retention suggestions</li>
+                </ul>
+            </div>
+            <div class="z-image">
+                <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=800&auto=format&fit=crop" alt="Turnover Prediction Engine">
+            </div>
+        </div>
+
+        <div class="z-row">
+            <div class="z-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Conversational Interface (Copilot)">
+            </div>
+            <div class="z-content">
+                <h2>Conversational Interface (Copilot)</h2>
+                <p>You don't need to learn a complex filtering language. Just type into the search bar: "Show me the labor variance for all Texas locations against last year." The AI translates the English intent into a complex SQL query, instantly generating a graph.</p>
+                <ul class="z-list">
+                    <li>Plain-English semantic searches</li>
+                    <li>Automated ad-hoc graph generation</li>
+                    <li>Cross-references disparate datasets effortlessly</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="roles-section reveal">
+        <div class="section-header">
+            <h2>Built for the Entire Enterprise Footprint</h2>
+            <p>Whether you're operating the line or analyzing the corporate P&L, Predictive AI Insights delivers immediate, contextualized value.</p>
+        </div>
+        <div class="roles-grid">
+            <div class="role-box">
+                <h3>👨‍🍳 For Store Managers</h3>
+                <p>Have a digital assistant essentially tell you what your operational priorities need to be the moment you step foot in the building.</p>
+            </div>
+            <div class="role-box">
+                <h3>👔 For Corporate Leadership</h3>
+                <p>Uncover multidimensional correlations (e.g., weather + sports events + specific coupon drops) that human analysts could never spot.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-banner reveal">
+        <div class="test-quote">"The predictive insights tool is like having a Wharton data scientist sitting in the back office of every single one of our 150 stores."</div>
+        <div class="test-author">Chief Information Officer</div>
+        <div class="test-brand">National Family Dining Brand</div>
+    </section>
+
+    <section class="faq-section reveal">
+        <div class="faq-heading">
+            <h2>Frequently Asked Questions</h2>
+            <p style="color:#64748b; font-size:1.1rem; max-width:600px; margin:0 auto;">Everything you need to know about implementing Altametrics Predictive AI Insights.</p>
+        </div>
+        <div class="accordion">
+            <details class="accordion-item" open>
+                <summary class="accordion-header">Is the AI learning from my competitors? <div class="accordion-icon"></div></summary>
+                <div class="accordion-content"><p>No, your data is securely siloed. However, the machine learning architecture (the weights and model structures) benefits from generalized industry-scale training.</p></div>
+            </details>
+            <details class="accordion-item">
+                <summary class="accordion-header">Can the AI execute actions automatically? <div class="accordion-icon"></div></summary>
+                <div class="accordion-content"><p>We maintain a 'human in the loop' philosophy. The AI prescribes the optimal action (like suggesting a vendor PO), but a recognized manager must ultimately approve the execution.</p></div>
+            </details>
+            <details class="accordion-item">
+                <summary class="accordion-header">Do I need a data science team to use this? <div class="accordion-icon"></div></summary>
+                <div class="accordion-content"><p>Not at all. The interface is designed specifically for restaurant operators with zero technical background, abstracting the complex data modeling away entirely.</p></div>
+            </details>
+        </div>
+    </section>
+
+    <section class="feature-cta reveal">
+        <div class="cta-box">
+            <h2>Ready to transform your operations?</h2>
+            <p>Join the 100,000+ restaurant professionals using Altametrics to scale profitability without the growing pains.</p>
+            <a href="https://altametrics.com/schedule-demo.html" class="btn-white">Book a Strategy Call</a>
+        </div>
+    </section>
+
+            <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="altametrics-logo-text" style="color:#0f172a; margin-bottom:10px;">Altametrics</div>
+                <p>Enterprise solutions for restaurant chains</p>
+
+                <!-- Address -->
+                <address class="footer-address">
+                    <span>17922 Fitch, Irvine,</span>
+                    <span>CA 92614, United States</span>
+                    <span>📞 +1 (949) 743-9560</span>
+                </address>
+
+                <!-- Social Icons -->
+                <div class="footer-socials">
+                    <!-- LinkedIn -->
+                    <button class="social-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </button>
+                    <!-- Twitter/X -->
+                    <button class="social-icon" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.631 5.903-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </button>
+                    <!-- Facebook -->
+                    <button class="social-icon" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </button>
+                    <!-- YouTube -->
+                    <button class="social-icon" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/>
+                        </svg>
+                    </button>
+                    <!-- Instagram -->
+                    <button class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Solutions</h4>
+                    <a href="https://altametrics.com/restaurant-back-office.html">Restaurant Software</a>
+                    <a href="workforce-scheduling.html">Workforce Management</a>
+                    <a href="https://altametrics.com/restaurant-inventory.html">Food Management</a>
+                    <a href="accounting.html">Accounting</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="https://altametrics.com/restaurant-checklist.html">Checklist</a>
+                    <a href="https://altametrics.com/restaurant-enterprise.html">Enterprise</a>
+                </div>
+                <div class="link-col">
+                    <h4>Resources</h4>
+                    <a href="https://altametrics.com/blog/">Articles</a>
+                    <a href="https://training.altametrics.com">Training Academy</a>
+                    <a href="https://altametrics.com/faq.html">FAQs</a>
+                    <a href="https://altametrics.com/contact.html">Support</a>
+                </div>
+                <div class="link-col">
+                    <h4>Company</h4>
+                    <a href="https://altametrics.com/about.html">About Us</a>
+                    <a href="https://altametrics.com/careers.html">Jobs</a>
+                    <a href="https://altametrics.com/diversity.html">Diversity</a>
+                    <a href="https://altametrics.com/schedule-demo.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Altametrics. All rights reserved. &nbsp; | &nbsp; <a
+                    href="https://altametrics.com/legal/privacy-policy/"
+                    style="color:var(--text-secondary); text-decoration:none;">Privacy Policy</a> &nbsp; | &nbsp; <a
+                    href="https://altametrics.com/legal/terms-of-use/"
+                    style="color:var(--text-secondary); text-decoration:none;">Terms of Use</a> &nbsp; | &nbsp; <a
+                    href="https://altametrics.com/sitemap.html"
+                    style="color:var(--text-secondary); text-decoration:none;">Sitemap</a></p>
+        </div>
+    </footer>
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div class="chat-popup" style="display: none;">
+            <button class="chat-close" onclick="document.querySelector('.chat-popup').style.display='none'">&times;</button>
+            <div class="chat-avatar">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix&backgroundColor=e6f0fa" alt="AI Bot">
+            </div>
+            <div class="chat-message">
+                Want to chat about Altametrics products? I'm an AI bot that's here to help! 🤩
+            </div>
+        </div>
+        <button class="chat-toggle-btn" onclick="const p=document.querySelector('.chat-popup'); p.style.display=(p.style.display==='none'?'block':'none')">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="white" />
+            </svg>
+        </button>
+    </div>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

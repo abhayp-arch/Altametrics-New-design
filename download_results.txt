@@ -1,0 +1,44 @@
+=== LOCAL ASSET EXISTS CHECK ===
+[OK]     assets/altametrics-dashboard-light.png
+[OK]     assets/ap_automation_mockup_v1_1774608102475.png
+[OK]     assets/enterprise_financial_summary_v1_1774608121305.png
+[OK]     assets/famous_daves_story.png
+[OK]     assets/inventory_cogs_analytics_mockup_v2_1774438423534.png
+[OK]     assets/inventory_invoice_ocr_mockup_v3_retry_1774437480462.png
+[OK]     assets/inventory_mobile_counting_mockup_v2_retry_1774437455466.png
+[OK]     assets/inventory_prep_forecasting_mockup_v2_retry_1774437532523.png
+[OK]     assets/inventory_recipe_costing_mockup_v3_retry_1774437500125.png
+[OK]     assets/inventory_supply_chain_automation_mockup_v2_1774438441071.png
+[OK]     assets/mooyah_story.png
+[OK]     assets/nadia_lynn_headshot_1774440753442.png
+[OK]     assets/peets_coffee_lifestyle_success_story_1774440734280.png
+[OK]     assets/reporting_custom_builder_1774537985972.png
+[OK]     assets/reporting_daily_activity_1774537945391.png
+[OK]     assets/reporting_hero_dashboard_1774537901842.png
+[OK]     assets/reporting_loss_prevention_1774537968323.png
+[OK]     assets/reporting_multiunit_scorecard_1774538003560.png
+[OK]     assets/reporting_realtime_insights_1774537921224.png
+[OK]     assets/workforce_ai_forecasting_dashboard_v2_1774435088598.png
+[OK]     assets/workforce_compliance_alerts_mockup_1774435067858.png
+[OK]     assets/workforce_enterprise_heatmap_1774434945580.png
+[OK]     assets/workforce_mobile_app_redesign_1774434898056.png
+[OK]     assets/workforce_plumclock_mockup_1774435793224.png
+[OK]     assets/12246591_1920_1080_30fps.mp4
+
+=== EXTERNAL IMAGES (need to download) ===
+Downloading: Buffalo-180-31da30fa2.webp
+  -> Saved to assets/Buffalo-180-31da30fa2.webp
+Downloading: Chipotle-180-d39d5b0f0.webp
+  -> Saved to assets/Chipotle-180-d39d5b0f0.webp
+Downloading: Jamba-bg-180-34687ebfe.webp
+  -> Saved to assets/Jamba-bg-180-34687ebfe.webp
+Downloading: Noodles-180-fa0c39df2.webp
+  -> Saved to assets/Noodles-180-fa0c39df2.webp
+Downloading: Peets-180-c3ab70114.webp
+  -> Saved to assets/Peets-180-c3ab70114.webp
+Downloading: Pizza-bg-180-5dc7b1bfa.webp
+  -> Saved to assets/Pizza-bg-180-5dc7b1bfa.webp
+Downloading: Taco-Bell-bg-180-8e2d707da.webp
+  -> Saved to assets/Taco-Bell-bg-180-8e2d707da.webp
+Downloading: Tokyo-bg-180-c5e968a47.webp
+  -> Saved to assets/Tokyo-bg-180-c5e968a47.webp

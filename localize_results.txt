@@ -1,0 +1,2 @@
+
+=== DONE: All external image references updated to local paths ===
